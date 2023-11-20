@@ -1,0 +1,22 @@
+용어
+
+- Working Directory: 작업 공간. 도화지 역할.
+- Local Repository(**$ git init**): 내 pc에서 관리하는 git 저장소. “.git” 폴더 생성
+- Remote Repository(**$ git remote https://git저장소 주소**): 로컬 저장소를 업로드 하는 곳. 원격저장소
+- Snapshot: 현재 Working Directory의 모습을 그대로 찍어낸 것.
+- Status(**$ git status**): 파일의 상태를 확인하는 명령어
+- Add(**$ git add 파일1, 파일2 / $ git add .**): 작업 폴더에서 작업한 변경을 stage에 올릴 때 사용
+- Commit(**$ git commit -m "커밋 메시지”**): 스냅샷을 하여 사진첩에 넣는 행위. 사진첩은 Git Repository(저장소)에 해당. Commit에는 자신의 id와 부모의 id가 존재. 파일의 히스토리.
+- Branch(**$ git branch 브랜치이름**)(**$ git branch -M 브랜치이름**): 특정 커밋을 가리키는 하나의 포인터
+- Push(**$ git push origin(원격 저장소 이름) master(브랜치 이름)**): commit한 파일을 원격 저장소에 올리는 명령어
+- Fetch(**$ git fetch origin**): 로컬에는 없지만 원격 저장소에 올라가 있는 데이터를 모두 가져옴(업데이트라고 보면 됨)
+- Merge(**$ git merge 브랜치이름**): 현재 작업 중인 브랜치에 합칠 커밋을 지정해서 병합
+- Checkout(**$ git checkout 브랜치이름**): Repository에 있는 특정 커밋의 내용을 Working Directory로 가져오는 과정. 브랜치 전환.
+
+- Untracked: Working Directory에 생성된 새로운 파일이 Git 저장소에서 추적 되지 않은 상태
+- Uncommitted Change: 아직 커밋하지 않은 변경 사항
+- master: 가장 기본이 되는 branch
+- HEAD: 현재 기준이 되는 커밋이 무엇인지 알려주는 포인터
+- Tag: HEAD나 Branch와 달리 가리키는 해쉬값이 고정
+- **$ git remote -v: 연결 확인**
+- Branch 관련 명령어: **git switch 브랜치이름**, **git merge 브랜치이름**, **git branch -d 브랜치이름**

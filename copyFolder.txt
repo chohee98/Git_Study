@@ -1,0 +1,11 @@
+git 특정 폴더 복사 명령어
+
+git init
+
+git remote add origin https://github.com/83wontae/gangwon3.git
+
+git config core.sparsecheckout true
+
+echo ShootingGameCode/* >> ./.git/info/sparse-checkout
+
+git pull origin main
